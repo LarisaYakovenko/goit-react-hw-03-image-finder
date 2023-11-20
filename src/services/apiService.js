@@ -14,7 +14,7 @@ export async function getImages(query, page) {
   });
 
   const {data} = await axios.get('/api/', { params });
-  return data
+  return data;
 }
 
 
