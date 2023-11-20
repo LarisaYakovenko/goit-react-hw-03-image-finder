@@ -24,7 +24,7 @@ export class App extends Component {
   }
 
   handleSubmit = query => {
-    this.setState(query);
+    this.setState({ query, page: 1, images: [] });
   };
 
   render() {
