@@ -13,7 +13,8 @@ export async function getImages(query, page) {
     per_page: 12,
   });
 
-  return await axios.get('/api/', { params });
+  const {data} = await axios.get('/api/', { params });
+  return data
 }
 
 
